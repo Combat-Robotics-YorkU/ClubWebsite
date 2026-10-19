@@ -1,0 +1,37 @@
+.wall {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wall li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 2 / 1;
+  border-radius: 12px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--text-small);
+}
+
+.wall img {
+  max-width: 60%;
+  max-height: 50%;
+  object-fit: contain;
+}
+
+.empty {
+  border: 1px dashed var(--color-border);
+  background: transparent !important;
+  color: var(--color-text-secondary) !important;
+}
+
+@media (max-width: 733px) {
+  .wall {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

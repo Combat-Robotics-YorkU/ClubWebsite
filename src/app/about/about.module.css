@@ -1,0 +1,95 @@
+.mission {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 48px;
+}
+
+.mission h2 {
+  font-size: var(--text-h2);
+}
+
+.missionText {
+  display: grid;
+  gap: 20px;
+  font-size: 1.3125rem;
+  line-height: 1.43;
+  color: var(--color-text-secondary);
+}
+
+.subteams {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.subteam {
+  padding: 32px 28px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+}
+
+.subteam h3 {
+  margin-bottom: 12px;
+  color: var(--color-accent);
+  font-size: var(--text-h3);
+}
+
+.subteam p {
+  color: var(--color-text-secondary);
+}
+
+.leads {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.avatar {
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: var(--color-surface-raised);
+}
+
+.leadName {
+  font-weight: 600;
+}
+
+.leadRole {
+  font-size: var(--text-small);
+  color: var(--color-text-secondary);
+}
+
+.cta {
+  margin-top: 56px;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .subteams {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 733px) {
+  .mission,
+  .subteams {
+    grid-template-columns: 1fr;
+  }
+
+  .mission {
+    gap: 20px;
+  }
+
+  .leads {
+    gap: 20px;
+  }
+}
+

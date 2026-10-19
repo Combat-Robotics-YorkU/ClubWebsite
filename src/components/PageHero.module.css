@@ -1,0 +1,39 @@
+.hero {
+  padding: clamp(4.5rem, 10vw, 7.5rem) 0 clamp(3.5rem, 7vw, 5rem);
+  background: var(--color-bg);
+  text-align: center;
+}
+
+.inner {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  font-size: var(--text-eyebrow);
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.title {
+  font-size: var(--text-h1);
+}
+
+.intro {
+  margin: 22px auto 0;
+  max-width: 680px;
+  font-size: var(--text-lead);
+  line-height: 1.38;
+  color: var(--color-text-secondary);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 32px;
+}
