@@ -6,7 +6,7 @@ The website for YorkU Combat Robotics, a proposed student design team that desig
 
 - **Home:** what the team does, the weight classes we build in, and ways to join or sponsor.
 - **About:** mission, how a fight works, subteams and leadership.
-- **Robots:** every robot, each with its own page and engineering journal.
+- **Robots:** every robot, each with its own page and writeup.
 - **Sponsors:** where the money goes, why sponsor, sponsorship tiers and the sponsor wall.
 - **Resources:** rules, competitions, design tools and references.
 - **Contact:** Discord, email and social links.
@@ -65,3 +65,15 @@ public/social/       Social media icons
 ## Updating content
 
 Page content lives in plain lists at the top of each page file, and club-wide details live in `src/site.ts`, so most updates don't need new code.
+
+## Contributing
+
+1. Fork the repository and create a branch for your change.
+2. Run `npm run dev` and check your change on desktop and mobile widths.
+3. Run `npm run lint` and `npm run build` to make sure nothing breaks.
+4. Open a pull request describing what changes you have made.
+5. Then I review your changes and make a decision accordingly
+
+## License
+
+Released under the [Apache License 2.0](LICENSE).
